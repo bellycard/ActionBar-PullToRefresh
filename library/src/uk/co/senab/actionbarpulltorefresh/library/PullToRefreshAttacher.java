@@ -49,8 +49,8 @@ public class PullToRefreshAttacher implements View.OnTouchListener {
 
     /* Default configuration values */
     private static final int DEFAULT_HEADER_LAYOUT = R.layout.default_header;
-    private static final int DEFAULT_ANIM_HEADER_IN = R.anim.fade_in;
-    private static final int DEFAULT_ANIM_HEADER_OUT = R.anim.fade_out;
+    private static final int DEFAULT_ANIM_HEADER_IN = R.anim.fade_in_ptr;
+    private static final int DEFAULT_ANIM_HEADER_OUT = R.anim.fade_out_ptr;
     private static final float DEFAULT_REFRESH_SCROLL_DISTANCE = 0.5f;
     private static final boolean DEFAULT_REFRESH_ON_UP = false;
     private static final int DEFAULT_REFRESH_MINIMIZED_DELAY = 3 * 1000;
@@ -846,7 +846,7 @@ public class PullToRefreshAttacher implements View.OnTouchListener {
             // Here we fade out most of the header, leaving just the progress bar
             if (mContentLayout != null) {
                 mContentLayout.startAnimation(AnimationUtils
-                        .loadAnimation(mContentLayout.getContext(), R.anim.fade_out));
+                        .loadAnimation(mContentLayout.getContext(), R.anim.fade_out_ptr));
                 mContentLayout.setVisibility(View.INVISIBLE);
             }
         }
