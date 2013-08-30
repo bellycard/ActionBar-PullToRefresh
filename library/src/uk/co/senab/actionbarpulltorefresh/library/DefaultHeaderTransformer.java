@@ -158,7 +158,7 @@ public class DefaultHeaderTransformer extends PullToRefreshAttacher.HeaderTransf
         // Here we fade out most of the header, leaving just the progress bar
         if (mContentLayout != null) {
             mContentLayout.startAnimation(AnimationUtils
-                    .loadAnimation(mContentLayout.getContext(), R.anim.fade_out));
+                    .loadAnimation(mContentLayout.getContext(), R.anim.fade_out_ptr));
             mContentLayout.setVisibility(View.INVISIBLE);
         }
     }
